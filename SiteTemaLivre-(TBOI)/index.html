@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 1</title>
+</head>
+<body>
+    <header>
+        <h1>The Binding Of Isaac</h1>
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#Personagens">Personagens</a>
+            <a href="#Bosses">Bosses</a>
+        </nav>
+        <button id="toggle-tema">Alternar tema</button>
+        <p id="contador-cliques">Cliques no menu: 0</p>
+    </header>
+    <main>
+        <section id="Home" class="card">
+            <h2>História do jogo</h2>
+            <p>
+                O pequeno Isaac vive feliz em uma casa isolada com sua mãe.
+                Um dia, a mãe de Isaac começa a ouvir uma "voz vinda dos céus" (supostamente Deus) exigindo que ela prove sua fé.
+                Ela retira os brinquedos e as roupas do garoto, tranca-o em seu quarto e, por fim, recebe a ordem final: Sacrificar seu próprio filho.
+                Desesperado e sem ter para onde ir, Isaac descobre um alçapão secreto sob o tapete do quarto e se joga no porão para escapar.
+                Lá embaixo, ele se vê preso em um labirinto infinito e claustrofóbico, povoado por monstros bizarros, aberrações e representações dos seus piores traumas.
+                Para se defender e sobreviver, Isaac ataca os inimigos usando como munição as suas próprias lágrimas.
+            </p>
+            <img id="IsaacImage" src="Img/Thumbs-Up-Isaac.png" alt="Isaac Thumbs Up">
+        </section>
+
+        <section id="Personagens" class="card">
+            <h2>Lista de Personagens</h2>
+            <ul id="menu-de-personagens">
+                <li>Isaac</li>
+                <li>Lilith</li>
+                <li>Lost</li>
+                <li>Cain</li>
+                <li>Azazel</li>
+                <li>Forgotten</li>
+                <li>Apollyon</li>
+                <li>Magdalene</li>
+                <li>Judas</li>
+                <li>Jacob & Esau</li>
+                <li>Bethany</li>
+                <li>Keeper</li>
+            </ul>
+            <p>OBS: Todos os personagens possuem uma versão "Tainted".</p>
+
+            <form id="busca-personagem">
+                <label for="filtro">Buscar personagem:</label>
+                <input type="text" id="filtro" name="filtro" placeholder="Ex: Azazel">
+                <button type="submit">Buscar</button>
+                <span id="aviso-filtro"></span>
+            </form>
+        </section>
+
+        <section id="Bosses" class="card">
+            <h2>Bosses por bioma</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Basement</td>
+                        <td>Caves</td>
+                        <td>Necropolis</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monstro</td>
+                        <td>Mega Maw</td>
+                        <td>Bloat</td>
+                    </tr>
+                    <tr>
+                        <td>Duke of Flies</td>
+                        <td>Gurdy</td>
+                        <td>Monstro II</td>
+                    </tr>
+                    <tr>
+                        <td>Larry Jr</td>
+                        <td>Chub</td>
+                        <td>Mask of Infamy</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <span>Matheus Miranda de Melo</span>
+        <a href="https://github.com/M4snw">Github</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

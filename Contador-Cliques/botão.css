@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#botao-verde{
+    padding: 14px 24px;
+    border: none;
+    background-color: #43a047;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#botao-verde:hover{
+    background-color: #2e7d32;
+}
+
+#texto-contador-verde{
+    margin-top: 20px;
+    font-size: 18px;
+}

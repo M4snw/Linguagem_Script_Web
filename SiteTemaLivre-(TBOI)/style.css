@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    --cor-caixa: rgba(240, 230, 210, 0.9);
+    --cor-borda: #6b4423;
+    --cor-fonte: #2b1810;
+    --cor-destaque: #6b4423;
+    --cor-destaque-fonte: #ffffff;
+    --cor-fundo-btn: #6b4423;
+    --cor-fonte-btn: #f0e6d2;
+
+    font-family: 'Press Start 2P', cursive;
+    background-image: url(Img/TBOI-Background.png);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    color: var(--cor-fonte);
+}
+
+body.escuro{
+    --cor-caixa: rgba(15, 10, 8, 0.88);
+    --cor-borda: #c9a876;
+    --cor-fonte: #f0e6d2;
+    --cor-destaque: #3d2411;
+    --cor-destaque-fonte: #f0e6d2;
+    --cor-fundo-btn: #c9a876;
+    --cor-fonte-btn: #2b1810;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 10px;
+}
+
+nav a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-caixa);
+    transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-destaque-fonte);
+    transform: scale(1.05);
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 70%;
+    max-width: 900px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    margin: 0 auto;
+    background-color: var(--cor-caixa);
+    border: 4px solid var(--cor-borda);
+    font-size: 10px;
+    color: var(--cor-fonte);
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.card h2{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#Home p{
+    flex: 1 1 300px;
+    line-height: 1.7;
+}
+
+#IsaacImage{
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+    border: 3px solid var(--cor-borda);
+}
+
+#menu-de-personagens{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+#menu-de-personagens li{
+    background-color: var(--cor-destaque);
+    color: var(--cor-destaque-fonte);
+    padding: 8px 12px;
+    border: 2px solid var(--cor-borda);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+form input{
+    font-family: inherit;
+    padding: 6px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-caixa);
+    color: var(--cor-fonte);
+}
+
+form button{
+    font-family: inherit;
+    padding: 6px 10px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-fundo-btn);
+    color: var(--cor-fonte-btn);
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-destaque-fonte);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead td{
+    background-color: var(--cor-destaque);
+    color: var(--cor-destaque-fonte);
+    font-weight: bold;
+}
+
+td{
+    border: 2px solid var(--cor-borda);
+    padding: 8px;
+    text-align: center;
+    color: var(--cor-fonte);
+}
+
+footer{
+    display: flex;
+    gap: 20px;
+    font-size: 10px;
+    color: var(--cor-fonte);
+}
+
+footer a{
+    color: var(--cor-fonte);
+}
+
+#toggle-tema{
+    font-family: inherit;
+    margin-top: 10px;
+    padding: 6px 10px;
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-fundo-btn);
+    color: var(--cor-fonte-btn);
+    cursor: pointer;
+    font-size: 9px;
+}
+
+#toggle-tema:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-destaque-fonte);
+}
+
+#contador-cliques{
+    margin-top: 8px;
+    font-size: 9px;
+    color: var(--cor-fonte);
+}
+
+#aviso-filtro{
+    color: #ff6b6b;
+    font-size: 8px;
+}
